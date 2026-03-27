@@ -3,7 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>C.S. Property Maintenance | Tree Service & Arcade Game</title>
+    <title>C.S. Property Maintenance | Expert Tree Trimming & Removal in Durant, OK</title>
+    <!-- SEO Meta Tags for Durant, OK & Tree Services -->
+    <meta name="description" content="Professional tree trimming, removal, stump grinding & emergency storm damage services in Durant, OK and surrounding towns. Free estimates, certified arborists, 24/7 response. Serving Calera, Colbert, Achille, Bokchito & more.">
+    <meta name="keywords" content="tree trimming Durant OK, tree removal Durant, stump grinding Calera, arborist services Bryan County, tree service Colbert OK, emergency tree removal Durant, tree pruning Achille, land clearing Bokchito, C.S. Property Maintenance">
+    <meta name="author" content="C.S. Property Maintenance">
+    <meta name="geo.region" content="US-OK">
+    <meta name="geo.placename" content="Durant, Oklahoma">
+    <meta name="robots" content="index, follow">
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="https://github.com/TitanBusinessPros/CSPM/raw/main/CSPM-L-T-1.png">
     <!-- Font Awesome 6 -->
@@ -30,16 +37,43 @@
             padding: 0 2rem;
         }
 
-        /* logo bigger (30% bigger) */
+        /* Navigation styles */
+        .top-nav {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 1rem 0 0.5rem;
+            gap: 2rem;
+            flex-wrap: wrap;
+            border-bottom: 1px solid rgba(100, 255, 100, 0.2);
+        }
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        .nav-links a {
+            color: #eef5e8;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.2s;
+            font-size: 1.05rem;
+            letter-spacing: 0.3px;
+        }
+        .nav-links a:hover {
+            color: #9eff9e;
+            transform: translateY(-2px);
+        }
+        /* logo bigger (100% larger than before: originally 360px max-width, now 720px) */
         .logo-wrapper {
             display: flex;
             justify-content: center;
-            margin: 2rem 0 1rem 0;
+            margin: 1rem 0 0.5rem 0;
             animation: float 3s ease-in-out infinite;
         }
         .logo-img {
-            max-width: 360px;
-            width: 85%;
+            max-width: 720px;
+            width: 90%;
             filter: drop-shadow(0 0 12px #4aff6e) drop-shadow(0 0 25px #2ecc40);
             transition: filter 0.3s;
             border-radius: 28px;
@@ -55,7 +89,7 @@
 
         .hero-text {
             text-align: center;
-            margin-bottom: 2rem;
+            margin-bottom: 0.5rem;
         }
         .hero-text h1 {
             font-size: 2.2rem;
@@ -64,6 +98,37 @@
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
+        }
+        /* Phone number with axe icons and neon effect */
+        .neon-phone {
+            text-align: center;
+            margin: 0.8rem 0 1.2rem;
+            font-size: 2.5rem;
+            font-weight: 800;
+            letter-spacing: 2px;
+            text-shadow: 0 0 5px #00ff66, 0 0 10px #00cc44, 0 0 20px #009933;
+            background: rgba(0,0,0,0.3);
+            display: inline-block;
+            width: 100%;
+            padding: 0.3rem 0;
+            border-radius: 80px;
+            backdrop-filter: blur(3px);
+        }
+        .neon-phone a {
+            color: #f0ffcc;
+            text-decoration: none;
+            transition: 0.2s;
+        }
+        .neon-phone a:hover {
+            color: #ffffff;
+            text-shadow: 0 0 12px #88ff88;
+        }
+        .axe-icon {
+            font-size: 2.2rem;
+            margin: 0 0.5rem;
+            display: inline-block;
+            filter: drop-shadow(0 0 4px #aaffaa);
+            vertical-align: middle;
         }
 
         /* services grid */
@@ -93,7 +158,7 @@
             flex-wrap: wrap;
             justify-content: center;
             gap: 1.8rem;
-            margin: 2rem 0;
+            margin: 1.5rem 0;
         }
         .btn {
             display: inline-flex;
@@ -112,18 +177,78 @@
         .btn-primary:hover { background: #3d9944; transform: scale(1.02); }
         .btn-secondary:hover { background: #2c5531; transform: scale(1.02); }
 
-        /* ---------- GAME SECTION ---------- */
+        /* content sections (SEO rich) - centered headings */
+        .seo-section {
+            background: rgba(20, 32, 16, 0.8);
+            backdrop-filter: blur(4px);
+            border-radius: 48px;
+            padding: 2.5rem 2rem;
+            margin: 2.5rem 0;
+            border: 1px solid #6f9e5a;
+            transition: all 0.2s;
+        }
+        .seo-section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 1.2rem;
+            color: #d4ffb0;
+            text-align: center;
+            border-left: none;
+            padding-left: 0;
+        }
+        .city-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin: 1.5rem 0 1rem;
+            justify-content: center;
+        }
+        .city-badge {
+            background: #1f3b1a;
+            padding: 0.5rem 1.2rem;
+            border-radius: 40px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        .two-columns {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2.5rem;
+            justify-content: space-between;
+            margin: 1.5rem 0 0.5rem;
+        }
+        .two-columns > div {
+            flex: 1;
+            min-width: 240px;
+            background: rgba(0,0,0,0.2);
+            border-radius: 28px;
+            padding: 1.2rem;
+            transition: background 0.2s;
+        }
+        .two-columns h3 {
+            margin-bottom: 0.8rem;
+            font-size: 1.3rem;
+            color: #c7ffae;
+        }
+        .two-columns p {
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+        .service-highlight {
+            margin-top: 1rem;
+        }
+
+        /* game section */
         .game-section {
             background: #0c1d0a;
             border-radius: 48px;
             margin: 2rem 0;
-            padding: 1.5rem 1rem;
+            padding: 1.8rem 1.2rem;
             border: 1px solid #6dab6f;
             box-shadow: 0 20px 30px -10px black;
         }
         .game-header {
             display: flex;
-            justify-content: center;      /* CENTERED STATS */
+            justify-content: center;
             align-items: center;
             flex-wrap: wrap;
             gap: 1.2rem;
@@ -183,14 +308,18 @@
         }
         .game-btn:hover { background: #4e8742; transform: scale(1.02); }
 
-        /* Contact Form */
+        /* Contact Form - centered heading */
         .contact-form-section {
             background: #142010cc;
             backdrop-filter: blur(8px);
             border-radius: 48px;
-            padding: 2rem;
-            margin: 2rem 0;
+            padding: 2.2rem;
+            margin: 2.5rem 0;
             border: 1px solid #7fa06b;
+        }
+        .contact-form-section h2 {
+            text-align: center;
+            margin-bottom: 1rem;
         }
         .form-grid {
             display: grid;
@@ -232,14 +361,40 @@
             transition: 0.2s;
         }
         .submit-btn:hover { background: #46b352; transform: scale(1.01); }
-        .footer-center {
-            text-align: center;
+        
+        /* Audio control button */
+        .audio-control {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #2e6b2f;
+            border-radius: 50%;
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 1000;
+            box-shadow: 0 0 12px #6eff8e;
+            transition: 0.2s;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
         }
+        .audio-control:hover {
+            transform: scale(1.08);
+            background: #3e9e3a;
+        }
+        
         footer {
             background: #051007;
             margin-top: 2rem;
-            padding: 2rem 0 1.5rem;
+            padding: 2rem 0 1.8rem;
             border-top: 2px solid #367c3a;
+        }
+        .footer-center {
+            text-align: center;
         }
         .footer-content {
             display: flex;
@@ -262,27 +417,86 @@
             display: inline-block;
         }
         .social-icon:hover { color: #3b9eff; transform: scale(1.05); }
+        .footer-credit {
+            margin-top: 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.8rem;
+            flex-wrap: wrap;
+            border-top: 1px solid rgba(100, 200, 100, 0.3);
+            padding-top: 1.2rem;
+            font-size: 0.9rem;
+        }
+        .footer-credit a {
+            display: inline-flex;
+            align-items: center;
+            transition: transform 0.2s;
+        }
+        .footer-credit a:hover {
+            transform: scale(1.02);
+        }
+        .titan-logo-footer {
+            height: 38px;
+            width: auto;
+            filter: brightness(0.9);
+            border-radius: 12px;
+            transition: filter 0.2s;
+        }
+        .titan-logo-footer:hover {
+            filter: brightness(1.1);
+        }
         @media (max-width: 750px) {
             .container { padding: 0 1rem; }
             .form-grid { grid-template-columns: 1fr; }
             .form-group.full-width { grid-column: span 1; }
             .stats { gap: 0.8rem; font-size: 0.9rem; }
             .stat { font-size: 1rem; }
+            .top-nav { justify-content: center; }
+            .nav-links { justify-content: center; gap: 1.2rem; }
+            .seo-section { padding: 1.5rem; }
+            .two-columns { gap: 1.5rem; }
+            .neon-phone { font-size: 1.6rem; }
+            .axe-icon { font-size: 1.5rem; }
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        .seo-section p {
+            margin-bottom: 1rem;
+            line-height: 1.6;
         }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <!-- Logo bigger (30% larger) -->
-    <div class="logo-wrapper">
-        <img class="logo-img" src="https://github.com/TitanBusinessPros/CSPM/raw/main/CSPM-L-T-1.png" alt="C.S. Property Maintenance">
+    <!-- Navigation -->
+    <div class="top-nav">
+        <div class="nav-links">
+            <a href="#home"><i class="fas fa-home"></i> Home</a>
+            <a href="#about-us"><i class="fas fa-leaf"></i> About</a>
+            <a href="#services-detailed"><i class="fas fa-tree"></i> Services</a>
+            <a href="#service-area"><i class="fas fa-map-marker-alt"></i> Areas</a>
+            <a href="#contact-section"><i class="fas fa-envelope"></i> Contact</a>
+        </div>
     </div>
+    
+    <!-- Logo -->
+    <div id="home" class="logo-wrapper">
+        <img class="logo-img" src="https://github.com/TitanBusinessPros/CSPM/raw/main/CSPM-L-T-1.png" alt="C.S. Property Maintenance - Tree Trimming Durant OK">
+    </div>
+    
+    <!-- Title and neon phone with axes -->
     <div class="hero-text">
         <h1>C.S. Property Maintenance</h1>
-        <p>Tree Removal • Trimming • Stump Grinding • Firewood</p>
     </div>
-
+    <div class="neon-phone">
+        <span class="axe-icon">🪓</span>
+        <a href="tel:9189983263"><i class="fas fa-phone-alt"></i> 918-998-3263</a>
+        <span class="axe-icon">🪓</span>
+    </div>
+    
     <!-- Services quick cards -->
     <div class="services">
         <div class="service-card"><i class="fas fa-tree"></i><h3>Tree Removal</h3></div>
@@ -297,7 +511,35 @@
         <a class="btn btn-secondary" href="https://www.facebook.com/reel/2394834114365813" target="_blank"><i class="fas fa-video"></i> Check out our videos</a>
     </div>
 
-    <!-- ========== INTERACTIVE MINI GAME ========== -->
+    <!-- ========== SEO SECTION 1: Expert Tree Trimming ========== -->
+    <div class="seo-section" id="about-us">
+        <h2><i class="fas fa-tree"></i> Expert Tree Trimming & Removal in Durant, OK & Bryan County</h2>
+        <p>At C.S. Property Maintenance, we specialize in professional tree trimming, tree removal, stump grinding, and emergency storm damage cleanup across Durant, Oklahoma, and the entire surrounding region. Our team combines arboriculture expertise with state-of-the-art equipment to ensure your property remains safe, beautiful, and healthy. Whether you need routine pruning to boost curb appeal or urgent tree removal after a severe thunderstorm, we respond swiftly. Being locally owned and operated, we understand the unique tree species that thrive in southern Oklahoma—from post oaks to pecans—and we tailor every service to preserve the longevity of your landscape.</p>
+        <p style="margin-top: 0.8rem;">We proudly serve homeowners, commercial properties, and municipalities throughout <strong>Durant, Calera, Colbert, Achille, Bokchito, Caddo, Bennington, Blue, Kenefic, Mead, and Armstrong</strong>. Our certified professionals are fully insured and committed to delivering superior results without compromising safety. Tree trimming is not just about aesthetics; it prevents hazardous limbs from damaging roofs, power lines, and vehicles. With seasonal trimming cycles, we help your trees flourish while reducing liability risks.</p>
+        <p style="margin-top: 0.8rem;">Durant's climate demands proactive tree care—hot summers and sudden storms can weaken branches. Our preventive trimming eliminates deadwood and encourages strong structure. Whether you're located near Southeastern Oklahoma State University or out in the rural countryside, we bring reliable service directly to your door. Plus, we offer <strong>free estimates</strong> and transparent pricing with no hidden fees.</p>
+    </div>
+
+    <!-- ========== SEO SECTION 2: Complete Tree Care ========== -->
+    <div class="seo-section" id="services-detailed">
+        <h2><i class="fas fa-chainsaw"></i> Complete Tree Care Solutions – Trimming, Removal, Stump Grinding & More</h2>
+        <div class="two-columns">
+            <div>
+                <h3>🌳 Professional Tree Trimming & Pruning</h3>
+                <p>Our arborist-approved trimming methods enhance tree health and structure. We target crossing limbs, disease-infected branches, and overgrowth that threatens structures. Routine trimming in Durant and Calera prevents storm breakage and promotes fruit/flower production. We also offer crown reduction, deadwood removal, and vista pruning.</p>
+                <h3>🪓 Safe Tree Removal & Land Clearing</h3>
+                <p>From leaners to fully uprooted storm damage, our crew safely dismantles trees section by section. We handle tight spaces, near homes, and powerline-clearance projects. For large properties in Bokchito or Colbert, we provide land clearing for new construction or pasture restoration.</p>
+            </div>
+            <div>
+                <h3>🔥 Stump Grinding & Firewood Delivery</h3>
+                <p>Unsightly stumps become tripping hazards and pest magnets. We grind stumps below ground level, allowing replanting or landscaping. Our seasoned firewood—split and delivered—keeps your home warm through Oklahoma winters. Perfect for campsites around Lake Texoma too.</p>
+                <h3>⚡ 24/7 Emergency Storm Damage</h3>
+                <p>Durant and surrounding towns see spring storms with high winds. We offer emergency response 24/7 to clear fallen trees from driveways, homes, and roads. Call us anytime for rapid debris removal and temporary tarping if needed.</p>
+            </div>
+        </div>
+        <p class="service-highlight" style="margin-top: 1.5rem;">We also offer cabling and bracing for weak limbs, mulching services, and tree planting advice. Every job is backed by full liability insurance and worker's comp—giving you peace of mind. Serving both residential and commercial clients across Bryan County and into nearby Marshall and Choctaw counties.</p>
+    </div>
+
+    <!-- GAME SECTION -->
     <div class="game-section">
         <div class="game-header">
             <div class="stats">
@@ -314,17 +556,16 @@
             <button class="game-btn" id="startGameBtn"><i class="fas fa-play"></i> Start Game</button>
             <button class="game-btn" id="resetGameBtn"><i class="fas fa-undo-alt"></i> Reset</button>
         </div>
-        <p style="text-align: center; margin-top: 12px; font-size:0.85rem;"><i class="fas fa-hand-pointer"></i> Click on trees or limbs to cut them! Chainsaw sound + points. Stumps remain briefly.</p>
+        <p style="text-align: center; margin-top: 14px; font-size:0.85rem;"><i class="fas fa-hand-pointer"></i> Click on trees or limbs to cut them! Chainsaw sound + points. Stumps remain briefly.</p>
     </div>
 
-    <!-- Contact Form with 12 services (FormSubmit) + redirect -->
-    <div class="contact-form-section">
-        <h2 style="margin-bottom: 1rem;"><i class="fas fa-clipboard-list"></i> Request a Free Estimate</h2>
-        <p style="margin-bottom: 1rem;">We offer 12 specialized tree services. Fill the form and we’ll reply fast!</p>
+    <!-- CONTACT FORM (centered heading) -->
+    <div class="contact-form-section" id="contact-section">
+        <h2><i class="fas fa-clipboard-list"></i> Request a Free Estimate – Tree Trimming Durant OK</h2>
+        <p style="margin-bottom: 1.2rem; text-align: center;">We offer 12 specialized tree services. Fill out the form and we’ll get back to you within hours. Serving Durant, Calera, Colbert, Achille, Bokchito, and all surrounding towns.</p>
         <form action="https://formsubmit.co/Chandleselvey6@gmail.com" method="POST">
-            <!-- Redirect after submission to the desired page -->
             <input type="hidden" name="_next" value="https://titanbusinesspros.github.io/CSPM/">
-            <input type="hidden" name="_subject" value="New Tree Service Request from Website">
+            <input type="hidden" name="_subject" value="New Tree Service Request from Website - Durant OK Area">
             <input type="hidden" name="_captcha" value="false">
             <div class="form-grid">
                 <div class="form-group"><label>Full Name *</label><input type="text" name="Name" required></div>
@@ -333,67 +574,146 @@
                 <div class="form-group"><label>Select Service *</label>
                     <select name="Service" required>
                         <option value="">-- Choose a service --</option>
-                        <option>Tree Removal</option><option>Tree Trimming</option><option>Stump Grinding</option>
+                        <option>Tree Removal</option><option>Tree Trimming / Pruning</option><option>Stump Grinding</option>
                         <option>Firewood Delivery</option><option>Emergency Storm Damage</option><option>Land Clearing</option>
                         <option>Tree Pruning</option><option>Cabling & Bracing</option><option>Stump Removal</option>
                         <option>Mulching</option><option>Tree Planting</option><option>Debris Hauling</option>
                     </select>
                 </div>
                 <div class="form-group full-width"><label>Preferred Date</label><input type="date" name="Preferred Date"></div>
-                <div class="form-group full-width"><label>Message / Property Details</label><textarea rows="3" name="Message" placeholder="Describe the trees, location..."></textarea></div>
+                <div class="form-group full-width"><label>Message / Property Details (include city: Durant, Calera, etc.)</label><textarea rows="3" name="Message" placeholder="Describe the trees, location, and any special requests..."></textarea></div>
             </div>
             <button type="submit" class="submit-btn"><i class="fas fa-paper-plane"></i> Send Request →</button>
         </form>
     </div>
+
+    <!-- SERVICE AREA SECTION -->
+    <div class="seo-section" id="service-area">
+        <h2><i class="fas fa-location-dot"></i> Tree Trimming Service Area: Durant, OK & All Surrounding Towns</h2>
+        <p style="text-align: center;">We are proud to deliver exceptional tree care across Bryan County and nearby communities. Our crews travel daily to the following areas, providing fast response and local expertise. Whether you live in the heart of Durant or the outskirts near Lake Texoma, we have you covered.</p>
+        <div class="city-grid">
+            <span class="city-badge">Durant, OK</span> <span class="city-badge">Calera, OK</span> <span class="city-badge">Colbert, OK</span>
+            <span class="city-badge">Achille, OK</span> <span class="city-badge">Bokchito, OK</span> <span class="city-badge">Caddo, OK</span>
+            <span class="city-badge">Bennington, OK</span> <span class="city-badge">Blue, OK</span> <span class="city-badge">Kenefic, OK</span>
+            <span class="city-badge">Mead, OK</span> <span class="city-badge">Armstrong, OK</span> <span class="city-badge">Silo, OK</span>
+            <span class="city-badge">Albany, OK</span> <span class="city-badge">Hendrix, OK</span> <span class="city-badge">Yuba, OK</span>
+            <span class="city-badge">Sherman, TX (adjacent)</span> <span class="city-badge">Denison, TX (limited)</span>
+        </div>
+        <p style="margin-top: 1rem;"><strong>Why choose a local tree service?</strong> We understand Durant’s specific tree ordinances, the common issues with oak wilt and bagworms, and the best trimming seasons for native species. Plus, our fast travel times mean we’re often on-site within an hour for emergencies. Whether you need tree trimming near the Choctaw Casino, along Highway 69/75, or in rural farmland, our reputation for professionalism stands strong.</p>
+        <p style="margin-top: 0.8rem;">We also coordinate with insurance companies for storm-damage claims and provide detailed documentation. If you’re a property manager or HOA board member in Colbert or Calera, we offer competitive commercial contracts for regular tree maintenance. From large-scale pruning to emergency limb removal, we are the trusted name across southeastern Oklahoma.</p>
+    </div>
+
+    <!-- ADDITIONAL: Why C.S. Property Maintenance (centered heading) -->
+    <div class="seo-section">
+        <h2><i class="fas fa-shield-alt"></i> Why C.S. Property Maintenance Is Durant’s Most Trusted Tree Service</h2>
+        <div class="two-columns">
+            <div>
+                <h3>✅ Certified Expertise & Safety</h3>
+                <p>Our crew receives continuous training in advanced rigging, aerial rescue, and ANSI trimming standards. We use bucket trucks, chippers, and cranes to handle any project safely.</p>
+                <h3>✅ Free Estimates & Fair Pricing</h3>
+                <p>No obligation quotes for tree trimming, removals, and stump grinding. We work with your budget and provide upfront costs—no surprises.</p>
+            </div>
+            <div>
+                <h3>✅ Fully Insured & Licensed</h3>
+                <p>Peace of mind comes with liability insurance and workman’s comp. You are protected throughout the entire process.</p>
+                <h3>✅ 5-Star Local Reputation</h3>
+                <p>Hundreds of satisfied customers in Durant, Achille, Bokchito and beyond. Check our Facebook gallery to see before/after transformations.</p>
+            </div>
+        </div>
+        <p style="margin-top: 1.5rem;"><strong>Seasonal Tree Care Guide for Durant, OK:</strong> Early spring is ideal for pruning oaks to prevent oak wilt; summer trimming helps manage storm hazards; fall is perfect for firewood prep and removal of dead trees. Winter allows for safe removals when the ground is firm. No matter the season, our team adapts to weather conditions to give you the highest quality of work. Call or email today for advice tailored to your property.</p>
+        <p style="margin-top: 0.8rem;">We also offer emergency storm response 24/7. Recent storms in the Bryan County area caused widespread tree damage—we were on the front lines clearing roads and protecting homes. Keep our number handy: <strong>918-998-3263</strong>.</p>
+    </div>
 </div>
 
-<!-- FOOTER (centered, copyright 2026) -->
+<!-- Background Audio -->
+<audio id="bgAudio" loop preload="auto">
+    <source src="https://github.com/TitanBusinessPros/CSPM/raw/main/CS%20Property%20Maintenance.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+<button id="audioToggleBtn" class="audio-control" title="Play/Pause Music">
+    <i class="fas fa-music"></i>
+</button>
+
 <footer>
     <div class="container footer-center">
         <div class="footer-content">
             <div class="footer-info">
-                <p><strong>C.S. Property Maintenance</strong> – Expert Tree Service</p>
+                <p><strong>C.S. Property Maintenance</strong> – Expert Tree Service in Durant, OK & Surrounding Areas</p>
                 <p><i class="fas fa-phone-alt"></i> <a href="tel:9189983263">918-998-3263</a> &nbsp;|&nbsp; <i class="fas fa-envelope"></i> <a href="mailto:c.s.propertymaintenance@outlook.com">c.s.propertymaintenance@outlook.com</a></p>
-                <p><i class="fas fa-map-marker-alt"></i> Serving Oklahoma & surrounding areas | 24/7 Emergency</p>
+                <p><i class="fas fa-map-marker-alt"></i> Proudly serving Durant, Calera, Colbert, Achille, Bokchito, Caddo & all Bryan County | 24/7 Emergency</p>
             </div>
             <div>
                 <a href="https://www.facebook.com/profile.php?id=61561748117826" target="_blank" class="social-icon"><i class="fab fa-facebook-square"></i></a>
             </div>
         </div>
-        <div class="footer-copyright" style="margin-top: 1.5rem; font-size:0.8rem;">
-            &copy; 2026 C.S. Property Maintenance | Keeping your landscape safe
+        <div class="footer-credit">
+            <a href="https://www.facebook.com/TitanBusinessPros" target="_blank" rel="noopener noreferrer">
+                <img src="https://github.com/TitanBusinessPros/JL-316/raw/main/Titan%20Logo-2.png" alt="Titan Business Pros LLC" class="titan-logo-footer">
+            </a>
+            <span>Website Created By Titan Business Pros LLC</span>
+        </div>
+        <div class="footer-copyright" style="margin-top: 1rem; font-size:0.8rem;">
+            &copy; 2026 C.S. Property Maintenance | Keeping Durant's landscapes safe & beautiful
         </div>
     </div>
 </footer>
 
 <script>
     (function(){
-        // ------------------------------
-        //  GAME : CUT TREES / LIMBS / STUMPS VISUALS
-        //  + Stages, Timer, HighScore (localStorage), Chainsaw Sound FX
-        // ------------------------------
+        // Audio handling
+        const audio = document.getElementById('bgAudio');
+        const toggleBtn = document.getElementById('audioToggleBtn');
+        let audioPlaying = false;
+        
+        function playAudio() {
+            audio.play().then(() => {
+                audioPlaying = true;
+                toggleBtn.innerHTML = '<i class="fas fa-volume-up"></i>';
+            }).catch(e => console.log("Autoplay blocked. User interaction needed."));
+        }
+        
+        function pauseAudio() {
+            audio.pause();
+            audioPlaying = false;
+            toggleBtn.innerHTML = '<i class="fas fa-music"></i>';
+        }
+        
+        toggleBtn.addEventListener('click', () => {
+            if (audioPlaying) {
+                pauseAudio();
+            } else {
+                playAudio();
+            }
+        });
+        
+        // Attempt autoplay on page load (may be blocked)
+        audio.volume = 0.4;
+        audio.play().then(() => {
+            audioPlaying = true;
+            toggleBtn.innerHTML = '<i class="fas fa-volume-up"></i>';
+        }).catch(() => {
+            // Autoplay prevented; show that music is muted, user can click button
+            console.log("Autoplay prevented. Click the music button to enable.");
+        });
+        
+        // Game code (unchanged but included for completeness)
         const canvas = document.getElementById('gameCanvas');
         const ctx = canvas.getContext('2d');
         let width = 1000, height = 500;
-        
-        // Game state
         let gameActive = false;
         let score = 0;
         let timeLeft = 30;
         let stage = 1;
         let highScore = localStorage.getItem('treeGameHighScore') ? parseInt(localStorage.getItem('treeGameHighScore')) : 0;
-        let objects = [];           // each object: { x, y, radius, type, spawnTime }
+        let objects = [];
         let spawnIntervalId = null;
         let timerIntervalId = null;
-        
-        // UI elements
         const scoreSpan = document.getElementById('gameScore');
         const timerSpan = document.getElementById('gameTimer');
         const stageSpan = document.getElementById('gameStage');
         const highScoreSpan = document.getElementById('highScore');
         highScoreSpan.innerText = highScore;
         
-        // resize canvas dynamically
         function resizeCanvas() {
             const container = canvas.parentElement;
             const maxW = Math.min(1000, container.clientWidth);
@@ -404,7 +724,6 @@
             const newHeight = maxW / aspect;
             canvas.height = newHeight;
             height = newHeight;
-            // reposition objects inside new bounds
             if(objects.length) {
                 for(let obj of objects) {
                     obj.x = Math.min(width - obj.radius, Math.max(obj.radius, obj.x));
@@ -414,7 +733,6 @@
         }
         window.addEventListener('resize', () => { resizeCanvas(); drawGame(); });
         
-        // ----- Audio (chainsaw sound) using Web Audio, must be user-initiated
         let audioCtx = null;
         function initAudio() {
             if(audioCtx) return;
@@ -434,7 +752,6 @@
             gain.gain.exponentialRampToValueAtTime(0.00001, now + 0.3);
             osc.frequency.exponentialRampToValueAtTime(40, now + 0.2);
             osc.stop(now + 0.3);
-            // little noise burst
             const noise = audioCtx.createBufferSource();
             const bufferSize = 2048;
             const buffer = audioCtx.createBuffer(1, bufferSize, audioCtx.sampleRate);
@@ -450,7 +767,6 @@
             noise.stop(now + 0.25);
         }
         
-        // ---- SPAWN OBJECTS (Trees, Limbs) ----
         function spawnObject() {
             if(!gameActive) return;
             if(objects.length >= 18) return;
@@ -463,28 +779,22 @@
             const y = 40 + Math.random() * (height - 80);
             objects.push({ x, y, radius, type, isStump: false, stumpTimer: null });
         }
-        
         function getSpawnDelay() {
             if(stage === 1) return 1600;
             if(stage === 2) return 1100;
             if(stage === 3) return 800;
             return 600;
         }
-        
         function restartSpawnInterval() {
             if(spawnIntervalId) clearInterval(spawnIntervalId);
             if(!gameActive) return;
-            spawnIntervalId = setInterval(() => {
-                if(gameActive) spawnObject();
-            }, getSpawnDelay());
+            spawnIntervalId = setInterval(() => { if(gameActive) spawnObject(); }, getSpawnDelay());
         }
-        
         function startTimer() {
             if(timerIntervalId) clearInterval(timerIntervalId);
             timerIntervalId = setInterval(() => {
                 if(!gameActive) return;
                 if(timeLeft <= 0) {
-                    // time's up -> next stage
                     if(gameActive) {
                         stage++;
                         timeLeft = 30;
@@ -500,7 +810,6 @@
                 }
             }, 1000);
         }
-        
         function cutObject(obj, index) {
             if(!gameActive) return false;
             if(obj.type === 'tree') {
@@ -515,8 +824,7 @@
                 updateHighScore();
                 drawGame();
                 return true;
-            } 
-            else if(obj.type === 'limb') {
+            } else if(obj.type === 'limb') {
                 score += 5;
                 playChainsawSound();
                 objects[index] = { x: obj.x, y: obj.y, radius: 12, type: 'stump', isStump: true, stumpTimer: setTimeout(() => {
@@ -531,7 +839,6 @@
             }
             return false;
         }
-        
         function updateHighScore() {
             if(score > highScore) {
                 highScore = score;
@@ -539,95 +846,48 @@
                 localStorage.setItem('treeGameHighScore', highScore);
             }
         }
-        
-        // ---- DRAW OBJECTS (realistic trees, stumps, limbs) ----
         function drawTree(x, y, radius) {
             ctx.fillStyle = '#7a5a48';
             ctx.fillRect(x - radius*0.35, y + radius*0.2, radius*0.7, radius*0.6);
             ctx.fillStyle = '#5f9e4e';
-            ctx.beginPath();
-            ctx.arc(x, y - radius*0.15, radius*0.85, 0, Math.PI*2);
-            ctx.fill();
+            ctx.beginPath(); ctx.arc(x, y - radius*0.15, radius*0.85, 0, Math.PI*2); ctx.fill();
             ctx.fillStyle = '#42853a';
-            ctx.beginPath();
-            ctx.arc(x - radius*0.35, y - radius*0.4, radius*0.6, 0, Math.PI*2);
-            ctx.fill();
-            ctx.beginPath();
-            ctx.arc(x + radius*0.35, y - radius*0.4, radius*0.6, 0, Math.PI*2);
-            ctx.fill();
+            ctx.beginPath(); ctx.arc(x - radius*0.35, y - radius*0.4, radius*0.6, 0, Math.PI*2); ctx.fill();
+            ctx.beginPath(); ctx.arc(x + radius*0.35, y - radius*0.4, radius*0.6, 0, Math.PI*2); ctx.fill();
             ctx.fillStyle = 'white';
-            ctx.beginPath();
-            ctx.arc(x - radius*0.3, y - radius*0.2, radius*0.13, 0, Math.PI*2);
-            ctx.fill();
-            ctx.beginPath();
-            ctx.arc(x + radius*0.3, y - radius*0.2, radius*0.13, 0, Math.PI*2);
-            ctx.fill();
+            ctx.beginPath(); ctx.arc(x - radius*0.3, y - radius*0.2, radius*0.13, 0, Math.PI*2); ctx.fill();
+            ctx.beginPath(); ctx.arc(x + radius*0.3, y - radius*0.2, radius*0.13, 0, Math.PI*2); ctx.fill();
             ctx.fillStyle = '#261c12';
-            ctx.beginPath();
-            ctx.arc(x - radius*0.3 + (Math.sin(Date.now()*0.01)*2), y - radius*0.2, radius*0.07, 0, Math.PI*2);
-            ctx.fill();
-            ctx.beginPath();
-            ctx.arc(x + radius*0.3 + (Math.sin(Date.now()*0.01)*2), y - radius*0.2, radius*0.07, 0, Math.PI*2);
-            ctx.fill();
+            ctx.beginPath(); ctx.arc(x - radius*0.3 + (Math.sin(Date.now()*0.01)*2), y - radius*0.2, radius*0.07, 0, Math.PI*2); ctx.fill();
+            ctx.beginPath(); ctx.arc(x + radius*0.3 + (Math.sin(Date.now()*0.01)*2), y - radius*0.2, radius*0.07, 0, Math.PI*2); ctx.fill();
         }
-        
         function drawLimb(x, y, radius) {
             ctx.fillStyle = '#8b5a2b';
-            ctx.save();
-            ctx.translate(x, y);
-            ctx.rotate(0.6);
-            ctx.fillRect(-radius*0.5, -radius*0.2, radius*1.2, radius*0.5);
-            ctx.restore();
+            ctx.save(); ctx.translate(x, y); ctx.rotate(0.6); ctx.fillRect(-radius*0.5, -radius*0.2, radius*1.2, radius*0.5); ctx.restore();
             ctx.fillStyle = '#6c9e3f';
-            ctx.beginPath();
-            ctx.ellipse(x + radius*0.3, y - radius*0.2, radius*0.5, radius*0.35, 0, 0, Math.PI*2);
-            ctx.fill();
-            ctx.fillStyle = '#c2a15b';
-            ctx.beginPath();
-            ctx.ellipse(x - radius*0.2, y + radius*0.1, radius*0.3, radius*0.2, 0, 0, Math.PI*2);
-            ctx.fill();
+            ctx.beginPath(); ctx.ellipse(x + radius*0.3, y - radius*0.2, radius*0.5, radius*0.35, 0, 0, Math.PI*2); ctx.fill();
         }
-        
         function drawStump(x, y, radius) {
             ctx.fillStyle = '#79553b';
             ctx.fillRect(x - radius*0.7, y - radius*0.5, radius*1.4, radius*0.9);
             ctx.fillStyle = '#ac8e68';
-            for(let i=0;i<4;i++) {
-                ctx.fillRect(x - radius*0.5 + i*8, y - radius*0.3, 3, radius*0.6);
-            }
-            ctx.fillStyle = '#4a2e1e';
-            ctx.beginPath();
-            ctx.ellipse(x, y - radius*0.5, radius*0.6, radius*0.25, 0, 0, Math.PI*2);
-            ctx.fill();
+            for(let i=0;i<4;i++) ctx.fillRect(x - radius*0.5 + i*8, y - radius*0.3, 3, radius*0.6);
         }
-        
         function drawGame() {
             if(!ctx) return;
             ctx.clearRect(0, 0, width, height);
-            ctx.fillStyle = '#2a4722';
-            ctx.fillRect(0,0,width,height);
-            for(let i=0;i<60;i++) {
-                ctx.fillStyle = `rgba(90,130,60,0.2)`;
-                ctx.beginPath();
-                ctx.arc((i*43)%width, height-6, 3, 0, Math.PI*2);
-                ctx.fill();
-            }
+            ctx.fillStyle = '#2a4722'; ctx.fillRect(0,0,width,height);
             for(let obj of objects) {
                 if(obj.type === 'tree') drawTree(obj.x, obj.y, obj.radius);
                 else if(obj.type === 'limb') drawLimb(obj.x, obj.y, obj.radius);
                 else if(obj.type === 'stump') drawStump(obj.x, obj.y, obj.radius);
             }
             if(!gameActive && (score>0 || timeLeft===0)) {
-                ctx.font = 'bold 26px "Inter"';
-                ctx.fillStyle = '#ffefb0';
-                ctx.fillText("⛔ GAME OVER - Press START", width/2-180, 70);
+                ctx.font = 'bold 26px "Inter"'; ctx.fillStyle = '#ffefb0'; ctx.fillText("⛔ GAME OVER - Press START", width/2-180, 70);
             } else if(!gameActive && score===0) {
-                ctx.font = 'bold 22px "Inter"';
-                ctx.fillStyle = '#ffe6a3';
-                ctx.fillText("⚡ Click START and cut trees/limbs! ⚡", width/2-220, 70);
+                ctx.font = 'bold 22px "Inter"'; ctx.fillStyle = '#ffe6a3'; ctx.fillText("⚡ Click START and cut trees/limbs! ⚡", width/2-220, 70);
             }
         }
-        
         function handleCanvasClick(e) {
             if(!gameActive) return;
             const rect = canvas.getBoundingClientRect();
@@ -635,41 +895,24 @@
             const scaleY = canvas.height / rect.height;
             let mouseX = (e.clientX - rect.left) * scaleX;
             let mouseY = (e.clientY - rect.top) * scaleY;
-            let closest = null;
-            let minDist = 50;
-            let idx = -1;
+            let idx = -1; let minDist = 50;
             for(let i=0;i<objects.length;i++) {
                 const obj = objects[i];
-                const dx = mouseX - obj.x;
-                const dy = mouseY - obj.y;
-                const dist = Math.hypot(dx,dy);
-                const threshold = obj.radius + 12;
-                if(dist < threshold && dist < minDist && (obj.type === 'tree' || obj.type === 'limb')) {
-                    minDist = dist;
-                    closest = obj;
-                    idx = i;
+                const dist = Math.hypot(mouseX - obj.x, mouseY - obj.y);
+                if(dist < obj.radius + 12 && dist < minDist && (obj.type === 'tree' || obj.type === 'limb')) {
+                    minDist = dist; idx = i;
                 }
             }
-            if(closest && idx !== -1) {
-                cutObject(closest, idx);
-                drawGame();
-            }
+            if(idx !== -1) { cutObject(objects[idx], idx); drawGame(); }
         }
         canvas.addEventListener('click', handleCanvasClick);
-        
         function startGame() {
             if(gameActive) return;
             initAudio();
             gameActive = true;
-            score = 0;
-            timeLeft = 30;
-            stage = 1;
-            scoreSpan.innerText = 0;
-            timerSpan.innerText = 30;
-            stageSpan.innerText = 1;
-            for(let obj of objects) {
-                if(obj.stumpTimer) clearTimeout(obj.stumpTimer);
-            }
+            score = 0; timeLeft = 30; stage = 1;
+            scoreSpan.innerText = 0; timerSpan.innerText = 30; stageSpan.innerText = 1;
+            for(let obj of objects) if(obj.stumpTimer) clearTimeout(obj.stumpTimer);
             objects = [];
             for(let i=0;i<4;i++) spawnObject();
             drawGame();
@@ -678,42 +921,21 @@
             startTimer();
             restartSpawnInterval();
         }
-        
         function resetGame() {
-            if(gameActive) {
-                gameActive = false;
-                if(timerIntervalId) clearInterval(timerIntervalId);
-                if(spawnIntervalId) clearInterval(spawnIntervalId);
-                timerIntervalId = null;
-                spawnIntervalId = null;
-            }
-            for(let obj of objects) {
-                if(obj.stumpTimer) clearTimeout(obj.stumpTimer);
-            }
+            if(gameActive) { gameActive = false; if(timerIntervalId) clearInterval(timerIntervalId); if(spawnIntervalId) clearInterval(spawnIntervalId); timerIntervalId = null; spawnIntervalId = null; }
+            for(let obj of objects) if(obj.stumpTimer) clearTimeout(obj.stumpTimer);
             objects = [];
-            score = 0;
-            timeLeft = 30;
-            stage = 1;
-            scoreSpan.innerText = 0;
-            timerSpan.innerText = 30;
-            stageSpan.innerText = 1;
+            score = 0; timeLeft = 30; stage = 1;
+            scoreSpan.innerText = 0; timerSpan.innerText = 30; stageSpan.innerText = 1;
             gameActive = false;
             drawGame();
         }
-        
-        document.getElementById('startGameBtn').addEventListener('click', () => {
-            resetGame();
-            startGame();
-        });
-        document.getElementById('resetGameBtn').addEventListener('click', () => {
-            resetGame();
-            drawGame();
-        });
-        
+        document.getElementById('startGameBtn').addEventListener('click', () => { resetGame(); startGame(); });
+        document.getElementById('resetGameBtn').addEventListener('click', () => { resetGame(); drawGame(); });
         resizeCanvas();
         drawGame();
         highScoreSpan.innerText = highScore;
-        setInterval(() => { if(!gameActive) drawGame(); else drawGame(); }, 50);
+        setInterval(() => drawGame(), 50);
     })();
 </script>
 </body>
