@@ -87,6 +87,25 @@
             filter: drop-shadow(0 0 22px #7eff9e) drop-shadow(0 0 35px #2ecc40);
         }
 
+        .verse-text {
+            text-align: center;
+            font-size: 0.85rem;
+            color: #cfe6c0;
+            background: rgba(0,0,0,0.25);
+            display: inline-block;
+            width: 100%;
+            padding: 0.4rem 1rem;
+            margin: 0.2rem 0 0.5rem 0;
+            border-radius: 40px;
+            backdrop-filter: blur(2px);
+            font-style: italic;
+            letter-spacing: 0.3px;
+        }
+        .verse-text i {
+            margin-right: 6px;
+            color: #aaffaa;
+        }
+
         .hero-text {
             text-align: center;
             margin-bottom: 0.5rem;
@@ -458,6 +477,7 @@
             .two-columns { gap: 1.5rem; }
             .neon-phone { font-size: 1.6rem; }
             .axe-icon { font-size: 1.5rem; }
+            .verse-text { font-size: 0.7rem; padding: 0.3rem 0.6rem; }
         }
         html {
             scroll-behavior: smooth;
@@ -486,7 +506,12 @@
     <div id="home" class="logo-wrapper">
         <img class="logo-img" src="https://github.com/TitanBusinessPros/CSPM/raw/main/CSPM-L-T-1.png" alt="C.S. Property Maintenance - Tree Trimming Mannford OK">
     </div>
-    
+
+    <!-- Bible Verse -->
+    <div class="verse-text">
+        <i class="fas fa-bible"></i> Colossians 3:23 — “Work willingly at whatever you do, as though you were working for the Lord rather than for people.”
+    </div>
+
     <!-- Title and neon phone with axes -->
     <div class="hero-text">
         <h1>C.S. Property Maintenance</h1>
@@ -625,7 +650,7 @@
 
 <!-- Background Audio -->
 <audio id="bgAudio" loop preload="auto">
-    <source src="https://github.com/TitanBusinessPros/CSPM/raw/main/CS%20Property%20Maintenance%20(1).mp3" type="audio/mpeg">
+    <source src="https://github.com/TitanBusinessPros/CSPM/raw/main/CS%20Property%20Maintenance.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
 </audio>
 <button id="audioToggleBtn" class="audio-control" title="Play/Pause Music">
@@ -693,7 +718,7 @@
             console.log("Autoplay prevented. Click the music button to enable.");
         });
         
-        // Game code (unchanged for brevity, same as before)
+        // Game code (unchanged)
         const canvas = document.getElementById('gameCanvas');
         const ctx = canvas.getContext('2d');
         let width = 1000, height = 500;
